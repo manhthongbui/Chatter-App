@@ -91,17 +91,13 @@ class _ChatterScreenState extends State<ChatterScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Chatter',
+                  'The universe',
                   style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
                       color: Colors.deepPurple),
                 ),
-                Text('by ishandeveloper',
-                    style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 8,
-                        color: Colors.deepPurple))
+                
               ],
             ),
           ],
@@ -169,7 +165,7 @@ class _ChatterScreenState extends State<ChatterScreen> {
                 ),
                 MaterialButton(
                   shape: CircleBorder(),
-                  color: Colors.blue,
+                  color: Colors.deepPurple[900],
                   onPressed: () {
                     chatMsgTextController.clear();
                     _firestore.collection('messages').add({
@@ -266,14 +262,14 @@ class MessageBubble extends StatelessWidget {
               bottomRight: Radius.circular(50),
               topRight: user ? Radius.circular(0) : Radius.circular(50),
             ),
-            color: user ? Colors.blue : Colors.white,
+            color: user ? Colors.deepPurple[900] : Colors.white,
             elevation: 5,
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: Text(
                 msgText,
                 style: TextStyle(
-                  color: user ? Colors.white : Colors.blue,
+                  color: user ? Colors.white : Colors.deepPurple[900],
                   fontFamily: 'Poppins',
                   fontSize: 15,
                 ),

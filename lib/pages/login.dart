@@ -44,7 +44,7 @@ class _ChatterLoginState extends State<ChatterLogin> {
                   Hero(
                     tag: 'HeroTitle',
                     child: Text(
-                      'Chatter',
+                      'The universe \n All in one',
                       style: TextStyle(
                           color: Colors.deepPurple[900],
                           fontFamily: 'Poppins',
@@ -147,13 +147,7 @@ class _ChatterLoginState extends State<ChatterLogin> {
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.1,
                   ),
-                  Hero(
-                    tag: 'footer',
-                    child: Text(
-                      'Made with ♥ by ishandeveloper',
-                      style: TextStyle(fontFamily: 'Poppins'),
-                    ),
-                  )
+                  
                 ],
               ),
             ),

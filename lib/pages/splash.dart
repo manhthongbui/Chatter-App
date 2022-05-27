@@ -50,9 +50,11 @@ class _ChatterHomeState extends State<ChatterHome>
                   height: MediaQuery.of(context).size.height * 0.02,
                 ),
                 Hero(
+                  
                   tag: 'HeroTitle',
-                  child: Text(
-                    'Chatter',
+                  child:
+                  Text(
+                    'The universe \n All in one',
                     style: TextStyle(
                         color: Colors.deepPurple[900],
                         fontFamily: 'Poppins',
@@ -63,15 +65,7 @@ class _ChatterHomeState extends State<ChatterHome>
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.01,
                 ),
-                TyperAnimatedTextKit(
-                  isRepeatingAnimation: false,
-                  speed:Duration(milliseconds: 60),
-                  text:["World's most private chatting app".toUpperCase()],
-                  textStyle: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 12,
-                      color: Colors.deepPurple),
-                ),
+                
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.15,
                 ),
@@ -102,7 +96,7 @@ class _ChatterHomeState extends State<ChatterHome>
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Text('Made with ♥ by ishandeveloper')
+                // Text('Made with ♥ by ishandeveloper')
               ],
             ),
           ),
